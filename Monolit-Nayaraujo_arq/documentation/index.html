@@ -1,0 +1,703 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title> Monolit   - Responsive  Architecture Template</title>
+	
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#DE6325;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+		<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start - Files</a></li>
+			<li><a href="#structure">Classes and structure</a></li>
+			<li><a href="#nav">Navigation</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#icons">Icons</a></li>
+			<li><a href="#port">Portfolios</a></li>
+			<li><a href="#contact_form">Contact form</a></li>
+			<li><a href="#video">Video background</a></li>
+			<li><a href="#share">Share</a></li>
+			<li><a href="#map">Map</a></li> 
+			<li><a href="#sources_credits">Sources & Credits</a></li>
+			<li><a href="#thanks">Thanks</a></li>
+
+		</ol>
+	</div>
+	<div id="documenter_content">
+	
+	
+	
+	<section id="documenter_cover"><h1>Monolit   - </h1><h2>Responsive  Architecture Template</h2><hr><ul><li>Created: 17/02/2016</li><li>latest Update: 15/04/2016</li><li>By: KWST</li><li><a href="http://themeforest.net/user/kwst"></a></li><li>Email: <a href="mailto:support@kwst.net">support@kwst.net</a></li></ul>
+	<p>Thanks for purchasing tempalte and for supporting my work. Monolit  - Responsive  Architecture Template. This documentation will not teach you HTML & CSS, it's just showcase of custom elements used in template.  . Also included in the archive selection page version. It is located in the folder "intro" .</p> This template is perfect for architects ,  photographers and designers . This template includes : 5 different home pages (slideshow , slider , video background- youtube , vimeo ,  and static image) , 7 different portfolio pages , 8 different  portfolio single pages ,  e.t.c. <br>
+	<p><strong style="color:red"> Very important !</strong> In order to work php scripts (contact form) and video background - your site files must reside on the local host or server. </p>
+<br><br><h3>Files</h3><hr class="notop"><br>
+<p>All site files are divided into folders:<br><br>
+<strong>css folder</strong> - css files that are responsible for the style themes.<br>
+<strong>js folder</strong> - javascript files.<br>
+<strong>php folder</strong> - php files.<br>
+<strong>images folder</strong> - folder that contains all images.<br>
+<strong>fonts folder</strong> - folder that contains  fonts plugin "Font-Awesome".<br>
+</p>
+
+
+</section>
+<div class="clerfix"></div>
+
+
+
+
+<section id="structure">
+<h3>Classes and structure</h3><hr class="notop">
+
+
+
+<h3>Structure</h3>
+<p>Header - It contains - logo, navigation and the button  "Share" . </p>
+
+<pre class="brush: html">
+<!--=============== header ===============-->	
+            <header>
+                <!-- header-inner  -->
+                <div class="header-inner">
+                    <!-- header logo -->
+                    <div class="logo-holder">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <!-- header logo end -->
+                    <!-- mobile nav button -->
+                    <div class="nav-button-holder">
+                        <div class="nav-button vis-m"><span></span><span></span><span></span></div>
+                    </div>
+                    <!-- mobile nav button end -->
+                    <!-- navigation  -->
+                    <div class="nav-holder">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="act-link">Home</a>
+                                    <!--second level -->
+                                    <ul>
+                                        <li><a href="index.html">Image</a></li>
+                                        <li><a href="index2.html">Slider</a></li>
+                                        <li><a href="index3.html">Slideshow</a></li>
+                                        <li><a href="index4.html">Youtube video</a></li>
+                                        <li><a href="index5.html">Vimeo video</a></li>
+                                        <li>
+                                            <a href="#">One page</a>
+                                            <ul>
+                                                <li><a href="onepage-1.html">Image</a></li>
+                                                <li><a href="onepage-2.html">Slider</a></li>
+                                                <li><a href="onepage-3.html">Slideshow</a></li>
+                                                <li><a href="onepage-4.html">Youtube video</a></li>
+                                                <li><a href="onepage-5.html">Vimeo video</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">Portfolio</a>
+                                    <!--second level -->
+                                    <ul>
+                                        <li>
+                                            <a href="#">Horizontal</a>
+                                            <!--third level -->
+                                            <ul>
+
+                                                <li><a href="portfolio.html">2 columns</a></li>
+                                                <li><a href="portfolio2.html">3 columns</a></li>
+                                                <li><a href="portfolio3.html">1 column</a></li>
+                                            </ul>
+                                            <!--third level end-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Vertical</a>
+                                            <!--third level -->
+                                            <ul>
+                                                <li><a href="portfolio4.html">3 columns</a></li>
+                                                <li><a href="portfolio5.html">4 columns</a></li>
+                                                <li><a href="portfolio6.html">5 columns</a></li>
+                                            </ul>
+                                            <!--third level end-->
+                                        </li>
+                                        <li><a href="portfolio-parallax.html">Parallax</a></li>
+                                        <li>
+                                            <a href="portfolio-single.html">Single</a>
+                                            <!--third level -->
+                                            <ul>
+                                                <li><a href="portfolio-single.html">Boxed Gallery</a></li>
+                                                <li><a href="portfolio-single2.html">Horizontal</a></li>
+                                                <li><a href="portfolio-single3.html">Horizontal 3d</a></li>
+                                                <li><a href="portfolio-single4.html">Horizontal style2</a></li>
+                                                <li><a href="portfolio-single5.html">Boxed Slider</a></li>
+                                                <li><a href="portfolio-single6.html">Boxed video</a></li>
+                                                <li><a href="portfolio-single7.html">Fullsreen slider</a></li>
+                                                <li><a href="portfolio-single8.html">Fullsreen video</a></li>
+                                            </ul>
+                                            <!--third level end-->
+                                        </li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                                <li>
+                                    <a href="about.html">About us </a>
+                                    <!-- Scroll navigation  -->
+                                </li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <!--second level end-->
+                                    <ul>
+                                        <li><a href="team-single.html">Team single</a></li>
+										<li><a href="team.html">Team</a></li>
+                                        <li><a href="blog-parallax.html">Blog parallax</a></li>
+                                        <li><a href="blog-single.html">Blog single</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- navigation  end -->
+                </div>
+                <!-- header-inner  end -->
+                <!-- share button  -->
+                <div class="show-share isShare">
+                	<span>Share</span>
+                    <i class="fa fa-chain-broken"></i>            
+                </div>
+                <!-- share  end-->
+            </header>
+            <!--header end -->
+</pre>
+
+<p>All content is between the tags</p>
+
+<pre class="brush: html">
+           <!--=============== wrapper ===============-->		
+            <div id="wrapper">
+                <!--=============== Conten holder  ===============-->
+                <div class="content-holder" >
+				
+					
+					Content here 
+				
+				
+				</div>
+			<div>
+</pre>
+<p>Footer - This template has   2 types  of footer . In the left corner (class fixed-footer) - social links and dynamic title . </p>
+<pre class="brush: html">
+<!-- Fixed footer -->
+            <footer class="fixed-footer">
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#" target="_blank" ><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank" ><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" target="_blank" ><i class="fa fa-tumblr"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Header  title --> 
+                <div class="footer-title">
+                    <h2><a  href="#"></a></h2>
+                </div>
+                <!-- Header  title  end-->
+            </footer>
+            <!-- Fixed footer end-->
+
+
+</pre>
+<p>And classic (footer with class "content-footer") with "to top " button and other information. </p> 
+<pre class="brush: html">
+                    <!-- content footer-->
+                    <div class="height-emulator"></div>
+                    <footer class="content-footer">
+                        <!--  container  --> 
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- Footer logo --> 
+                                    <div class="footer-item footer-logo">
+                                        <a href="index.html" class="ajax"><img src="images/footer-logo.png" alt=""></a>
+                                        <p>Our team takes over everything, from an idea and concept development to realization. We believe in traditions and incorporate them within our innovations.Client is the soul of the project.  </p>
+                                    </div>
+                                    <!-- Footer logo end --> 
+                                </div>
+                                <!-- Footer info --> 
+                                <div class="col-md-2">
+                                    <div class="footer-item">
+                                        <h4 class="text-link">Call</h4>
+                                        <ul>
+                                            <li><a href="#">+7(111)123456789</a></li>
+                                            <li><a href="#">+1(000)987654321</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Footer info end--> 
+                                <!-- Footer info --> 
+                                <div class="col-md-2">
+                                    <div class="footer-item">
+                                        <h4 class="text-link">Write</h4>
+                                        <ul>
+                                            <li><a href="#">yourmail@domain.com</a></li>
+                                            <li><a href="#">email@website.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Footer info-->
+                                <!-- Footer info end--> 
+                                <div class="col-md-2">
+                                    <div class="footer-item">
+                                        <h4 class="text-link">Visit</h4>
+                                        <ul>
+                                            <li><span>USA 27TH BROOKLYN NY</span></li>
+                                            <li> <a href="" target="_blank">View on map</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Footer info end--> 
+                            </div>
+                            <!-- Footer copyright -->
+                            <div class="row">
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6">
+                                    <div class="footer-wrap">
+                                        <span class="copyright">  &#169; Monolit   2016.  All rights reserved.  
+                                        </span>
+                                        <span class="to-top">To Top</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Footer copyright end -->
+                        </div>
+                        <!--  container  end --> 
+                        <!-- Hover animation  -->
+                        <canvas class="particular"></canvas>
+                        <!-- Hover animation  end -->
+                    </footer>
+                    <!-- content footer end -->
+</pre>
+ 
+
+ </section>	
+ 
+<section id="nav">
+ 
+
+
+
+<h3>Navigation</h3>
+<hr class="notop">
+<p>Multi page navigation  example</p>
+
+<pre class="brush: html">
+ <nav>
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="act-link">Home</a>
+                                    <!--second level -->
+                                    <ul>
+                                        <li><a href="index.html">Image</a></li>
+                                        <li><a href="index2.html">Slider</a></li>
+                                        <li><a href="index3.html">Slideshow</a></li>
+                                        <li><a href="index4.html">Youtube video</a></li>
+                                        <li><a href="index5.html">Vimeo video</a></li>
+                                        <li>
+                                            <a href="#">One page</a>
+                                            <ul>
+                                                <li><a href="onepage-1.html">Image</a></li>
+                                                <li><a href="onepage-2.html">Slider</a></li>
+                                                <li><a href="onepage-3.html">Slideshow</a></li>
+                                                <li><a href="onepage-4.html">Youtube video</a></li>
+                                                <li><a href="onepage-5.html">Vimeo video</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">Portfolio</a>
+                                    <!--second level -->
+                                    <ul>
+                                        <li>
+                                            <a href="#">Horizontal</a>
+                                            <!--third level -->
+                                            <ul>
+
+                                                <li><a href="portfolio.html">2 columns</a></li>
+                                                <li><a href="portfolio2.html">3 columns</a></li>
+                                                <li><a href="portfolio3.html">1 column</a></li>
+                                            </ul>
+                                            <!--third level end-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Vertical</a>
+                                            <!--third level -->
+                                            <ul>
+                                                <li><a href="portfolio4.html">3 columns</a></li>
+                                                <li><a href="portfolio5.html">4 columns</a></li>
+                                                <li><a href="portfolio6.html">5 columns</a></li>
+                                            </ul>
+                                            <!--third level end-->
+                                        </li>
+                                        <li><a href="portfolio-parallax.html">Parallax</a></li>
+                                        <li>
+                                            <a href="portfolio-single.html">Single</a>
+                                            <!--third level -->
+                                            <ul>
+                                                <li><a href="portfolio-single.html">Boxed Gallery</a></li>
+                                                <li><a href="portfolio-single2.html">Horizontal</a></li>
+                                                <li><a href="portfolio-single3.html">Horizontal 3d</a></li>
+                                                <li><a href="portfolio-single4.html">Horizontal style2</a></li>
+                                                <li><a href="portfolio-single5.html">Boxed Slider</a></li>
+                                                <li><a href="portfolio-single6.html">Boxed video</a></li>
+                                                <li><a href="portfolio-single7.html">Fullsreen slider</a></li>
+                                                <li><a href="portfolio-single8.html">Fullsreen video</a></li>
+                                            </ul>
+                                            <!--third level end-->
+                                        </li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                                <li>
+                                    <a href="about.html">About us </a>
+                                    <!-- Scroll navigation  -->
+                                </li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <!--second level end-->
+                                    <ul>
+                                        <li><a href="team-single.html">Team single</a></li>
+										<li><a href="team.html">Team</a></li>
+                                        <li><a href="blog-parallax.html">Blog parallax</a></li>
+                                        <li><a href="blog-single.html">Blog single</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                            </ul>
+                        </nav>
+
+</pre>
+
+<p>One page navigation. Example :  </p>
+ <pre class="brush: html">
+                        <nav class="scroll-nav">
+                            <ul>
+                                <li><a class="scroll-link" href="#sec1"  data-bgtex="Home"><span>Home</span></a></li>
+                                <li><a class="scroll-link" href="#sec2"  data-bgtex="about us"><span>About</span></a></li>
+                                <li><a class="scroll-link" href="#sec3"  data-bgtex="Featured works"><span>Works</span></a></li>
+                                <li><a class="scroll-link" href="#sec4"  data-bgtex="Our skills"><span>Skills</span></a></li>
+                                <li><a class="scroll-link" href="#sec5"  data-bgtex="Our Team"><span>Team</span></a></li>
+                                <li><a class="scroll-link" href="#sec6"  data-bgtex="Our services"><span>Services</span></a></li>
+                                <li><a class="scroll-link" href="#sec7"  data-bgtex="contacts"><span>Contacts</span></a></li>
+								<li><a href="blog.html" class="external"><span>Blog</span></a></li>
+                            </ul>
+                        </nav>
+</pre>
+ <p>Address Links in a one-page navigation should correspond to the content identifier . Example :  href="#sec3" - page scrolling to the content  with identifier id="sec3" . In data-bgtex add your text for dynamic title : Example <strong>data-bgtex="about us" </strong> .  If you use one-page version  and want add links  from another page to your main page -  use this structure (example portfolio-onepage.html) :
+
+
+ </p>
+ <pre class="brush: html">
+                        <nav>
+                            <ul>
+                                <li><a href="onepage-1.html#sec1"><span>Home</span></a></li>
+                                <li><a href="onepage-1.html#sec2"><span>About</span></a></li>
+                                <li><a href="onepage-1.html#sec3" class="act-link"><span>Works</span></a></li>
+                                <li><a href="onepage-1.html#sec4"><span>Skills</span></a></li>
+                                <li><a href="onepage-1.html#sec5"><span>Team</span></a></li>
+                                <li><a href="onepage-1.html#sec6"><span>Services</span></a></li>
+                                <li><a href="onepage-1.html#sec7"><span>Contacts</span></a></li>
+								<li><a href="blog.html" class="external"><span>Blog</span></a></li>
+                            </ul>
+                        </nav>
+
+</pre>
+ 
+ </section>	
+
+<section id="images">	
+<h3>Images</h3><hr class="notop">
+<p>All images are in the folder "images".<br>       
+</p>
+<br>
+<h3>How to add and change the background image</h3>
+
+<p>To change the background you can simply change the path in data-bg in html code, for example : </p>
+<pre class="brush: html">
+ 
+<div class="bg" data-bg="images/bg/2.jpg"></div>
+	
+</pre>
+ 
+</section>
+
+<section id="icons">
+	<h3>Icons</h3><hr class="notop">
+<p>	All  icons are generated by the plugin <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">"Font-Awesome"</a>. List of all the icons can be found <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here</a>. 
+<br>
+To change the icon, you have to copy and paste the code icon at the right place for you. Icons size-five . Read the documentation plugin - it is described in detail how to change the icons size.
+
+</p>
+<p>For example: </p>
+<pre class="brush: html">
+                    <ul>
+                        <li><a href="#" target="_blank" ><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank" ><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" target="_blank" ><i class="fa fa-tumblr"></i></a></li>
+                    </ul>
+
+
+</pre>
+
+<p>&nbsp;
+	</p>
+</section>
+
+<section id="port">
+<h3>Portfolio</h3><hr class="notop">
+
+
+<p>Filters portfolio - To filter worked - class links in the code must conform to the class of the filter element, for example: </p>  
+ 
+ 
+<pre class="brush: html">
+                            <div class="gallery-filters hid-filter">
+                                <a href="#" class="gallery-filter transition2 gallery-filter_active" data-filter="*">All</a>
+                                <a href="#" class="gallery-filter transition2" data-filter=".interior">Interior</a>
+                                <a href="#" class="gallery-filter transition2" data-filter=".construction">Construction</a>
+                                <a href="#" class="gallery-filter transition2" data-filter=".design">Design</a>
+                                <a href="#" class="gallery-filter transition2" data-filter=".houses">Houses</a>
+
+                            </div>
+
+
+</pre>
+<pre class="brush: html">
+                                    <!-- portfolio item -->
+                                    <div class="portfolio_item houses construction">
+                                        <img  src="images/folio/thumbs/3.jpg"   alt="">
+                                        <div class="port-desc-holder">
+                                            <div class="port-desc">
+                                                <div class="grid-item">
+                                                    <h3><a href="portfolio-single.html">Curabitur bibendum</a></h3>
+                                                    <span>Design /   Construction</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- portfolioitem end -->
+
+
+
+</pre>
+ <p>In this case, when you click on the link with the class "construction" will be displayed elements with class "construction"</p> 
+ 
+ </section>	
+
+
+<section id="contact_form">
+	<h3>Contact Form</h3><hr class="notop">
+<p>
+Find the file "contact_me" in the folder <strong>php</strong> . In this file, find the line <strong style="color:red">$to_Email = "myemail@gmail.com";</strong> and add you e-mail.</p> 
+<p>How to forward mail to your mailbox ask your Hosting Service Provider. Because providers use different control panel site and I find it hard to predict what you use. Server side script for sending emails is in "contact_me.php" . Ajax submit is initialized in "scripts.js" file.</p>
+<p>&nbsp;
+	</p>
+	
+<pre class="brush: js">
+
+    $("#contactform").submit(function() {
+        var a = $(this).attr("action");
+        $("#message").slideUp(750, function() {
+            $("#message").hide();
+            $("#submit").attr("disabled", "disabled");
+            $.post(a, {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                comments: $("#comments").val()
+            }, function(a) {
+                document.getElementById("message").innerHTML = a;
+                $("#message").slideDown("slow");
+                $("#submit").removeAttr("disabled");
+                if (null != a.match("success")) $("#contactform").slideDown("slow");
+            });
+        });
+        return false;
+    });
+    $("#contactform input, #contactform textarea").keyup(function() {
+        $("#message").slideUp(1500);
+    });
+
+</pre>
+</section>
+
+
+<section id="video">
+<h3>Video</h3><hr class="notop">
+
+<p>This template uses Youtube  and vimeo  video as background . To add your video (youtube)  in html file find line :</p>
+
+<pre class="brush: html">
+ 
+<div  class="background-youtube" data-vid="oDpSPNIozt8" data-mv="1"> </div>
+</pre>
+
+<p>add you video id  in data-vid="" if you want add sound change data-mv="1" on data-mv="0" </p>
+<p>  To add your video (vimeo)  in html file find line :</p>
+<pre class="brush: html">
+ 
+<div  class="background-vimeo" data-vim="143243001"> </div>
+
+</pre>
+<p>add you video id  in data-vim=""  </p>
+
+<p>And yet the video does not play on smartphones :( - so if a user comes to your site from a mobile browser - the background is replaced by a picture  :)</p>
+ <p>  To add your background image for  mobile in html file find line :</p>
+<pre class="brush: html">
+ 
+<div class="mob-bg bg" data-bg="images/bg/17.jpg"></div>
+
+</pre>
+ 
+
+
+ </section>	
+
+
+
+
+ 
+ 
+ 
+ 
+<section id="share">
+<h3>Share your pages</h3><hr class="notop">
+<p>To configure the plugin  in each  html  find line :</p>
+<pre class="brush: html"> 		
+<div class="share-container  isShare"  data-share="['facebook','pinterest','googleplus','twitter','linkedin']"></div>
+</pre>
+<p>You can simply add a comma in line: <strong>social: 'facebook','pinterest','googleplus','twitter','linkedin' 'foursquare' , 'flickr', 'digg' , 'tumblr', 'vimeo' , 'stumbleupon'</strong>  separated names of social networks . On any page, you can add any option sets share buttons for social networking</p>
+</section>
+
+ 
+ <section id="map">
+<h3>Map</h3><hr class="notop">
+<p>To configure the map   in   file map.js   find code :</p>
+<pre class="brush: js"> 		
+			// markers and locations------------------
+            values: [ {
+                latLng: [ 40.7143528, -74.0059731 ],
+                data: "Our office  - New York City",
+                options: {
+                    icon: "images/marker.png"
+                }
+            } ],
+ 
+</pre>
+<p> And add your own values latLng: [ 40.7143528, -74.0059731 ]  latitude and longitude , data  = Description in the pop-up window . To find the coordinates - visit this <a href="http://www.mapcoordinates.net/en" target="_blank"><strong style="color:red">link</strong></a>  </p>
+</section>
+ 
+
+<section id="sources_credits">
+	<h3>Sources & Credits</h3><hr class="notop">
+<p>
+
+	
+	
+	<strong>Images</strong><br>
+	https://www.behance.net/<br>
+	</p>
+
+<p>
+	<strong>Icons</strong><br>
+		Font-Awesome<br>
+	http://fortawesome.github.io/Font-Awesome/</p>
+
+
+
+<p>
+<strong>Javascripts </strong><br><br>
+
+	<strong>JQuery</strong><br>
+	http://jquery.com</p>
+<p>
+	<strong>JQuery Easing</strong><br>
+	http://gsgd.co.uk/sandbox/jquery/easing/</p>
+<p>
+	<strong>Owlcarousel</strong><br>
+	http://www.owlcarousel.owlgraphic.com/</p>
+	<p>
+	<strong>isotope</strong><br>
+	http://isotope.metafizzy.co/</p>
+		<p>
+	<strong> Light gallery</strong><br>
+	https://github.com/sachinchoolur/lightGallery</p>	
+	
+ 
+	
+</section>
+<section id="thanks">
+	<h3>Thanks</h3><hr class="notop">
+<p>
+	Thanks for purchasing template and for supporting my work. If we fail here in this documentation, please e-mail me  <a href="mailto:support@kwst.net">support@kwst.net</a>. If you have a spare time, please go and rate my template. I will apreciate that.</p>
+<p>
+	Thanks</p>
+</section>
+
+	</div>
+</body>
+</html>
