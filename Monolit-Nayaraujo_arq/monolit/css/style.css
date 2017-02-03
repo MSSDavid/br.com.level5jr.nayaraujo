@@ -3447,7 +3447,7 @@ article .section-title {
 .show-share {
 	position:absolute;
 	top:19px;
-	right:50px;
+	right:19px;
 	z-index:21;
 	cursor:pointer;
 	color:rgba(255,255,255,0.21);
