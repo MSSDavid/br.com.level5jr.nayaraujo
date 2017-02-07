@@ -673,14 +673,14 @@ header:before {
 }
 .header-inner {
 	float:left;
-	padding-left:80px;
+	padding-left:5px;
 }
 .logo-holder {
 	float:left;
 	position:relative;
-	width:90px;
+	width:70px;
 	z-index:21;
-	top:20px;
+	top:10px;
 }
 .logo-holder img {
 	width:100%;
@@ -3447,7 +3447,7 @@ article .section-title {
 .show-share {
 	position:absolute;
 	top:19px;
-	right:50px;
+	right:19px;
 	z-index:21;
 	cursor:pointer;
 	color:rgba(255,255,255,0.21);
@@ -4058,4 +4058,7 @@ p {
 	-webkit-background-size:cover;
 	background-position:center;
 }
+}
+.whatsapp {
+	text-color:green;
 }
