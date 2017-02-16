@@ -2723,6 +2723,26 @@ footer.fixed-footer .footer-social li a:hover {
 	text-transform:uppercase;
 	letter-spacing:1px;
 }
+
+#developer {
+	margin-right:15px;
+	padding-top:575px;
+	float:center;
+	text-align:right;
+	color:#fff;
+	font-size:8px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+
+#developer:hover {
+	color:#aaa;
+}
+
+#developer img {
+	margin-left:15px;
+}
+
 .to-top {
 	float:right;
 	color:#fff;
