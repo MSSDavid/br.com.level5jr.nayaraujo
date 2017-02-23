@@ -2799,7 +2799,6 @@ footer.fixed-footer .footer-social li a:hover {
 .contact-form-holder {
 	float:left;
 	width:100%;
-	margin-top:50px;
 }
 #contact-form  , #comment-form{
 	width:100%;
@@ -2851,7 +2850,8 @@ footer.fixed-footer .footer-social li a:hover {
 	-webkit-appearance: none;
 }
 #submit:hover {
-	 color:#ccc;
+	 color:#fff;
+	 background:#000;
 }
 #submit i , .to-top i , footer.fixed-footer .footer-social li a , .clients-list a  {
 	-webkit-transition: all 200ms linear;
@@ -2991,6 +2991,14 @@ footer.fixed-footer .footer-social li a:hover {
 	font-weight:700;
 	text-align:left;
 	padding-bottom:30px;
+}
+.process-box h3 , .send-a-msg {
+	float:left;
+	width:100%;
+	font-size:26px;
+	font-weight:700;
+	text-align:left;
+	padding-top:50px;
 }
 .creat-list {
 	float:left;
@@ -4078,7 +4086,4 @@ p {
 	-webkit-background-size:cover;
 	background-position:center;
 }
-}
-.whatsapp {
-	text-color:green;
 }
