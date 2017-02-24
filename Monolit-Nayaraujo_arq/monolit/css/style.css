@@ -324,6 +324,17 @@ blockquote p {
 	width:100%;
 	height:auto;
 }
+#about_img {
+	margin-left:0;
+	width: 50%;
+}
+@media (min-width: 991.5px) {
+	#about_img {
+		display: block;
+		margin-left: 15%;
+		width: 100%;
+	}
+}
 .overlay {
 	position:absolute;
 	top:0;
