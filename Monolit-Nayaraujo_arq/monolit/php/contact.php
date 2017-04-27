@@ -15,16 +15,16 @@ $comments = $_POST['comments'];
 
 
 if(trim($name) == '') {
-	echo '<div class="error_message">Enter your name.</div>';
+	echo '<div class="error_message">Informe seu nome.</div>';
 	exit();
 } else if(trim($email) == '') {
-	echo '<div class="error_message">Enter a valid email address.</div>';
+	echo '<div class="error_message">Informe o endereço de e-mail válido.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="error_message">You have enter an invalid e-mail address, try again.</div>';
+	echo '<div class="error_message">Você informou um endereço de e-mail inválido, tende novamente.</div>';
 	exit();
 } else if(trim($comments) == '') {
-	echo '<div class="error_message">Enter your message.</div>';
+	echo '<div class="error_message">Informe sua Mensagem</div>';
 	exit();
 } 
 
@@ -72,13 +72,13 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
-	echo "<h3>Email Sent Successfully.</h3>";
-	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+	echo "<h3>E-mail enviado com sucesso!</h3>";
+	echo "<p>Obrigado por entrar em contato, <strong>$name</strong>, nós registramos sua mensagem.</p>";
 	echo "</div>";
 	echo "</fieldset>";
 
 } else {
 
-	echo 'ERROR!';
+	echo 'ERRO!';
 
 }
