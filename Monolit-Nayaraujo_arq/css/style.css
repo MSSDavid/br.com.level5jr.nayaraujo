@@ -3376,14 +3376,14 @@ article .section-title {
 	border-bottom:1px solid #eee;
 }
 .comment-form-holder {
-	max-width:800px;
+	width: 80%;
 	float:left;
 	margin-top:30px;
 }
 #comments{
 	text-align:left;
 	padding-top: 10px;
-	max-width:800px;
+	width: 100%;
 }
 #comments-title , #reply-title{
 	border-bottom: 1px solid #eee;

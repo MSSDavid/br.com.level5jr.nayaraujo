@@ -1,0 +1,11 @@
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:uGaDyq
+ErrorDocument 404 /404.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE uGaDyq:ERRORPAGEID
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteRule ^contact/ /contact.html [NC,L]
+
+</IfModule>
